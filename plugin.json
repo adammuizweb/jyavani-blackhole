@@ -1,0 +1,59 @@
+{
+  "name": "jyavani-blackhole",
+  "version": "0.1.0",
+  "title": "Jyavani Blackhole",
+  "description": "Privately archives Media and File lifecycle snapshots and managed purge artifacts.",
+  "author": "Adam Muiz",
+  "author_uri": "https://jyavani.com/member/adammuiz/",
+  "homepage": "https://jyavani.com/plugin/jyavani-blackhole/",
+  "license": "MIT",
+  "requires": {
+    "jyavani": ">=2.3.106",
+    "php": ">=8.1",
+    "extensions": ["pdo", "pdo_mysql", "json"],
+    "plugins": {}
+  },
+  "permissions": [
+    {
+      "key": "plugin.jyavani-blackhole.audit.read",
+      "label": "View Blackhole Archive",
+      "supports_scope": false,
+      "default_roles": ["admin"],
+      "delegable": false
+    }
+  ],
+  "admin": {
+    "pages": [
+      {
+        "route": "admin/tools/jyavani-blackhole",
+        "file": "admin/index.php",
+        "title": "Blackhole Archive",
+        "roles": ["admin"],
+        "permission": "plugin.jyavani-blackhole.audit.read"
+      },
+      {
+        "route": "admin/tools/jyavani-blackhole/detail",
+        "file": "admin/detail.php",
+        "title": "Blackhole Archive Detail",
+        "roles": ["admin"],
+        "permission": "plugin.jyavani-blackhole.audit.read",
+        "hidden": true
+      }
+    ],
+    "nav": [
+      {
+        "label": "Blackhole Archive",
+        "icon": "history",
+        "page": "admin/tools/jyavani-blackhole",
+        "parent": "tools",
+        "roles": ["admin"]
+      }
+    ]
+  },
+  "static": {
+    "copy": [
+      {"from": "assets/admin.css", "to": "static/plugins/jyavani-blackhole/admin.css"}
+    ]
+  },
+  "assets": {"css": [], "js": []}
+}
