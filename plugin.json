@@ -5,8 +5,15 @@
   "description": "Privately archives Media and File lifecycle snapshots and managed purge artifacts.",
   "author": "Adam Muiz",
   "author_uri": "https://jyavani.com/member/adammuiz/",
-  "homepage": "https://jyavani.com/plugin/jyavani-blackhole/",
+  "plugin_uri": "https://jyavani.com/plugin/jyavani-blackhole/",
+  "homepage": "https://github.com/adammuizweb/jyavani-blackhole",
+  "github_url": "https://github.com/adammuizweb/jyavani-blackhole",
   "license": "MIT",
+  "icon": "icon.png",
+  "store": {
+    "url": "https://jyavani.com/plugin-store",
+    "slug": "jyavani-blackhole"
+  },
   "requires": {
     "jyavani": ">=2.3.106",
     "php": ">=8.1",

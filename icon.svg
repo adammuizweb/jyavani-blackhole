@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Jyavani Blackhole">
+  <defs>
+    <linearGradient id="space" x1="72" y1="40" x2="440" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172554"/>
+      <stop offset="1" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="104" y1="328" x2="420" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.48" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="horizon">
+      <stop offset="0.58" stop-color="#02030A"/>
+      <stop offset="0.8" stop-color="#111827"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#space)"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="5 15" opacity=".75"/>
+  <path d="M82 283c32 69 313 87 356-22 31-78-95-133-212-110-83 16-145 68-124 115 26 57 180 69 261 16" fill="none" stroke="url(#orbit)" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="104" fill="url(#horizon)" stroke="#818CF8" stroke-width="5"/>
+  <circle cx="256" cy="256" r="70" fill="#010207"/>
+  <g fill="#E2E8F0" stroke="#0F172A" stroke-width="8" stroke-linejoin="round">
+    <path d="M120 128h76a12 12 0 0 1 12 12v52a12 12 0 0 1-12 12h-76a12 12 0 0 1-12-12v-52a12 12 0 0 1 12-12Z"/>
+    <path d="M326 104h66a12 12 0 0 1 12 12v46a12 12 0 0 1-12 12h-66a12 12 0 0 1-12-12v-46a12 12 0 0 1 12-12Z"/>
+    <path d="M364 338h58a11 11 0 0 1 11 11v42a11 11 0 0 1-11 11h-58a11 11 0 0 1-11-11v-42a11 11 0 0 1 11-11Z"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M137 153h42M137 178h28" stroke="#0EA5E9" stroke-width="9"/>
+    <path d="M341 128h38M341 150h23" stroke="#F59E0B" stroke-width="8"/>
+    <path d="M375 359h34M375 380h20" stroke="#6366F1" stroke-width="8"/>
+  </g>
+  <path d="M198 200c13 10 23 20 31 31M322 184c-13 11-23 23-30 36M354 332c-15-9-27-19-37-31" fill="none" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16"/>
+</svg>
